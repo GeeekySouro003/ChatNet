@@ -1,6 +1,11 @@
 import React from 'react'
+import {useAuthContext} from '../../../context/AuthContext.jsx'
+import useConversation from '../../../zustand/useConversation';
+const Message = ({message}) => {
 
-const Message = () => {
+  const {authUser} = useAuthContext();
+  const {selectedConversation} = useConversation()
+  const fromMe= message.senderId === authUser._id
   return (
     <div className='chat chat-end'>
         <div className='chat-image avatar'>
