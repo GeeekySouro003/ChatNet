@@ -35,6 +35,9 @@ cd ChatNet
 
 ```
 cd backend npm install
+
+
+yeuquf
 ```
 
 <p>4. Install client dependencies:</p>
